@@ -190,7 +190,7 @@ if __name__ == '__main__':
         my_model_acc.append(acc_score(y_test, y_pred))
         sk_model_acc.append(acc_score(y_test, y_pred2))
         endtime = time.time()
-        print(f"Finished iteration {i} in {endtime-starttime:.2f} seconds. My model took {my_model_end-my_model:.2f} seconds. SKLearn took {endtime-sk_start} seconds.")
+        print(f"Finished iteration {i} in {endtime-starttime:.2f} seconds. My model took {my_model_end-my_model:.2f} seconds. SKLearn took {endtime-sk_start:.2f} seconds.")
         #
         # print("My model's accuracy", acc_score(y_test, y_pred))
         # print("SKLearn's model's accuracy", acc_score(y_test, y_pred2))
